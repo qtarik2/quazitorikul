@@ -1,0 +1,12 @@
+// Import Poppins with multiple weights
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+// Custom Bootstrap setup
+@import "../node_modules/bootstrap/scss/functions";
+
+// Override variables
+$body-bg: #121212;
+$font-family-base: 'Poppins', sans-serif;
+
+// Import Bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap";
