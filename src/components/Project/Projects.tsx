@@ -29,7 +29,7 @@ function Projects() {
                 />
                 <div className="card-desc">
                   <Button
-                    className="d-flex mb-2 container-fluid"
+                    className="d-flex container-fluid"
                     styleSheet={{
                       color: "#e29ba7",
                       fontWeight: "Bold",
