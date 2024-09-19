@@ -21,7 +21,7 @@ export function AboutInformation() {
     //   </div>
     // </div>
 
-    <div className="about-information container mb-5">
+    <div className="about-information container">
       <div className="row justify-content-center align-items-center">
         <div className="col-md-3 mb-3 mb-md-0 p-2">
           <img src="profile.svg" className="fixed-image img-fluid" alt="Profile Image" />
