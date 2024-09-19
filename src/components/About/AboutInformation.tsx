@@ -1,27 +1,5 @@
 import "./AboutInformation.css"
 
-// export function AboutInformation() {
-//   return (
-//     <div className="about-information">
-//       <div className="row justify-content-left">
-//         <div className="d-flex flex-column flex-md-row align-items-center">
-//           <div className="p-2">
-//             <img
-//               src="profile.svg"
-//               className="fixed-image"
-//               alt="Profile"
-//             />
-//           </div>
-//           <div className="summary p-2 flex-grow-1 text-center text-md-start">
-//             Game programmer with experience mostly in systems and gameplay
-//             programming, who enjoys writing effective, well-organized code and
-//             is always eager to take on new challenges.
-//           </div>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// }
 export function AboutInformation() {
   return (
     <div className="about-information">

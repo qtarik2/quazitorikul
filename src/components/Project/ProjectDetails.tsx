@@ -8,6 +8,7 @@ import {
   faUser,
   faUserGroup,
 } from "@fortawesome/free-solid-svg-icons";
+import "./Projects.css";
 
 function ProjectDetails() {
   const location = useLocation();

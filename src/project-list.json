@@ -11,7 +11,7 @@
   {
     "projectId": 1,
     "projectName": "Luddu",
-    "projectDetail": "Luddu is a classic board game with tournament feature. this game is made on Unity Engine for android platform",
+    "projectDetail": "Luddu is a classic board game with tournament feature. this game is made on Unity Engine for android platform. The team consist of two programmer and a backend react developer.",
     "projectFootage": "logo.svg",
     "members": 3,
     "myContribution": "1. Facebook, Google and Email Login.\n2. Forget password system.\n3. Custom News feed system handled using API call."
