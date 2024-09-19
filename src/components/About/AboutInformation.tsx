@@ -1,28 +1,40 @@
-import "./AboutInformation.css"
+import "./AboutInformation.css";
 
 export function AboutInformation() {
   return (
-    <div className="about-information">
-      <div className="row justify-content-left">
-        <div className="d-flex flex-column flex-md-row align-items-center">
-          <div className="p-2">
-            <img
-              src="profile.svg"
-              className="fixed-image img-fluid"
-              alt="Profile"
-            />
-          </div>
-          <div className="summary p-2 flex-grow-1 text-center text-md-start">
-            Game programmer with experience mostly in systems and gameplay
-            programming, who enjoys writing effective, well-organized code and
-            is always eager to take on new challenges.
-          </div>
+    // <div className="about-information">
+    //   <div className="row justify-content-left">
+    //     <div className="d-flex flex-column flex-md-row align-items-center">
+    //       <div className="p-2">
+    //         <img
+    //           src="profile.svg"
+    //           className="fixed-image img-fluid"
+    //           alt="Profile"
+    //         />
+    //       </div>
+    //       <div className="summary p-2 flex-grow-2 text-center text-md-start">
+    //         Game programmer with experience mostly in systems and gameplay
+    //         programming, who enjoys writing effective, well-organized code and
+    //         is always eager to take on new challenges.
+    //       </div>
+    //     </div>
+    //   </div>
+    // </div>
+
+    <div className="about-information container mb-5">
+      <div className="row justify-content-center align-items-center">
+        <div className="col-md-3 mb-3 mb-md-0 p-2">
+          <img src="profile.svg" className="fixed-image img-fluid" alt="Profile Image" />
+        </div>
+        <div className="col-md-9 summary p-2">
+          Game programmer with experience mostly in systems and gameplay
+          programming, who enjoys writing effective, well-organized code and is
+          always eager to take on new challenges.
         </div>
       </div>
     </div>
   );
 }
-
 
 export function AboutMe() {
   return (
