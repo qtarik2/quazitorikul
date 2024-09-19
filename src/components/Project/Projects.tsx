@@ -3,6 +3,7 @@ import Button from "../Button";
 import GetFontAwesomeIcon from "../FontAwesome";
 import ProjectList from "../../project-list.json";
 import { useNavigate } from "react-router-dom";
+import "./Projects.css";
 
 function Projects() {
   const navigate = useNavigate();
@@ -10,36 +11,30 @@ function Projects() {
   return (
     <div className="projects">
       <h1>Projects</h1>
-      <div className="row row-cols-2">
+      {/* Use Bootstrap's responsive column classes */}
+      <div className="row row-cols-1 row-cols-md-2 g-4">
         {ProjectList.map((project) => {
           return (
             <div className="col" key={project.projectId}>
-              {" "}
-              {/* Add key prop */}
               <div className="card">
                 <img
                   src={project.projectFootage}
                   className="img-fluid"
-                  alt="Profile"
+                  alt="Project"
                   style={{
                     height: "300px",
-                    width: "auto",
-                    objectFit: "cover", // Ensures the aspect ratio is maintained
+                    width: "100%", // Ensure full width inside the column
+                    objectFit: "cover",
                   }}
                 />
                 <div className="card-desc">
                   <Button
                     className="d-flex container-fluid"
                     styleSheet={{
-                      color: "#e29ba7",
-                      fontWeight: "Bold",
-                      fontSize: "2.5em",
-                      padding: 0,
-                      border: "none",
-                      borderRadius: "4px",
+                      color: "#e29ba7"
                     }}
                     onClick={() => {
-                      navigate("/project-details/", {state: {project}});
+                      navigate("/project-details/", { state: { project } });
                     }}
                   >
                     <>

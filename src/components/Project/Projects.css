@@ -1,0 +1,134 @@
+.projects > h1,
+.tech-experience > h1 {
+  color: #8bc5bf;
+  text-align: left;
+}
+
+.projects > h1,
+.tech-experience > h1 .project-detail {
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+/* content bottom margin */
+.projects,
+.tech-experience {
+  margin-bottom: 40px;
+}
+
+.projects .col {
+  padding: 10px;
+}
+
+.projects .card {
+  background-color: #232323;
+  color: #d1cbcc;
+}
+
+.projects .card .card-desc {
+  margin: 2em;
+  height: 188px;
+  transition: height 0.3s ease;
+}
+
+.projects .card .card-desc .description {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  transition: color 0.3s ease;
+}
+
+.projects .card .card-desc .description:hover + .card-desc,
+.projects .card .card-desc:hover {
+  height: auto;
+  overflow: visible;
+}
+
+.projects .card .card-desc .description:hover {
+  color: white;
+  transition: color 0.3s ease;
+
+  -webkit-line-clamp: unset;
+  overflow: visible;
+}
+
+.project-detail .detail-section {
+  transition: color 0.3s ease;
+}
+
+.project-detail .detail-section p:hover {
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.project-detail figure {
+  position: relative;
+  max-width: 1280px;
+  /* Constrain the width on large screens */
+  width: 100%;
+}
+
+.project-detail img {
+  display: block;
+  width: 100%;
+  /* Make sure the image takes up full width */
+  height: auto;
+}
+
+.project-detail figcaption {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 6px;
+  text-align: left;
+  width: 100%;
+  /* Match the width of the image */
+  color: #8bc5bf;
+  bottom: 0;
+}
+
+.project-detail .col > h4 {
+  margin-bottom: 30px;
+}
+
+.project-detail .detail-section {
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+
+.project-detail .box {
+  background-color: #232323;
+  border-radius: 4px;
+}
+
+.project-detail .box > h4,
+.project-detail .detail-section > h4 {
+  color: #ffffff;
+}
+
+.project-detail .box > p,
+.project-detail .detail-section > p {
+  color: #bebebe;
+}
+
+.project-detail .box {
+  padding: 30px 20px 10px 20px;
+}
+
+/* Existing button styles for larger screens */
+.projects .card .card-desc .btn {
+  font-size: 2.5em;
+  font-weight: bold;
+  padding: 0;
+  border: none;
+  border-radius: 4px;
+}
+
+/* Media query for small screens */
+@media (max-width: 1000px) {
+  .projects .card .card-desc .btn {
+    font-size: 1.5em; /* Smaller font size for small screens */
+  }
+}
