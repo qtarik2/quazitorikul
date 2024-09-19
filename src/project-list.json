@@ -1,8 +1,8 @@
 [
   {
     "projectId": 2,
-    "projectName": "Coloring",
-    "projectDetail": "Its a kid's coloring game made in Unity",
+    "projectName": "Cinnamoroll 2",
+    "projectDetail": "It's a drawing application designed for kids. This game is made on Unity for iOS platform.",
     "projectFootage": "gameplay-gif.gif",
     "members": 1,
     "myContribution": "Fix admob interstitial ads not showing"
@@ -10,10 +10,10 @@
   },
   {
     "projectId": 1,
-    "projectName": "Luddo",
-    "projectDetail": "A classic game made with Unity",
+    "projectName": "Luddu",
+    "projectDetail": "Luddu is a classic board game with tournament feature. this game is made on Unity Engine for android platform",
     "projectFootage": "logo.svg",
     "members": 3,
-    "myContribution": "Fix admob interstitial ads not showing"
+    "myContribution": "1. Facebook, Google and Email Login.\n2. Forget password system.\n3. Custom News feed system handled using API call."
   }
 ]

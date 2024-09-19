@@ -8,11 +8,6 @@
   }
 }
 
-
-.about-information {
-  margin-bottom: 100px;
-}
-
 .header>h1,
 .header>p,
 .projects>h1,
@@ -207,16 +202,6 @@
   color: #e29ba7;
   font-weight: bold;
   border: 1px solid #e29ba7;
-}
-
-.about-me {
-  background-color: #b7dbd8;
-  padding: 40px;
-}
-
-.about-me h1 {
-  color: black;
-  font-weight: 600;
 }
 
 p {
