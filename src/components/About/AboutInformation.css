@@ -85,6 +85,10 @@
   .about-information img {
     max-width: 200px;
   }
+
+  .about-me {
+    padding: 10px;
+  }
 }
 
 /* For larger screens, flex-row to keep items in a row */

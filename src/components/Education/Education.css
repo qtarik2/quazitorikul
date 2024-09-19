@@ -1,0 +1,40 @@
+.educations {
+  margin-bottom: 40px;
+}
+
+.educations > h1 {
+  margin-bottom: 20px;
+  font-weight: 600;
+  color: #8bc5bf;
+  text-align: left;
+}
+
+.educations .col-md-6 {
+  padding: 0;
+  margin: 0;
+}
+
+.educations .col-md-6 .box {
+  background-color: #232323;
+  padding: 50px 50px 25px 50px;
+  border-radius: 4px;
+}
+
+.educations .col-md-6 .box > h4 {
+  color: #ffffff;
+}
+
+.educations .col-md-6 .box > h4 {
+  color: #ffffff;
+}
+
+.educations .col-md-6 .box > p {
+  color: #bebebe;
+}
+
+@media (max-width: 768px) {
+  .educations .col-md-6 .box {
+  padding: 20px 20px 10px 20px;
+  border-radius: 4px;
+}
+}

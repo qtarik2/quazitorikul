@@ -16,6 +16,12 @@
   margin-bottom: 40px;
 }
 
+.tech-experience li {
+  color: #e29ba7;
+  font-weight: bold;
+  border: 1px solid #e29ba7;
+}
+
 .projects .col {
   padding: 10px;
 }
@@ -130,5 +136,15 @@
 @media (max-width: 1000px) {
   .projects .card .card-desc .btn {
     font-size: 1.5em; /* Smaller font size for small screens */
+  }
+
+  .projects .card .card-desc .description {
+    -webkit-line-clamp: unset; 
+  }
+
+  .projects .card .card-desc {
+    height: auto;
+    padding: 15px;
+    margin: 5px;
   }
 }

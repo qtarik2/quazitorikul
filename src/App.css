@@ -9,8 +9,7 @@
 }
 
 .header > h1,
-.header > p,
-.educations > h1 {
+.header > p {
   color: #8bc5bf;
   text-align: left;
 }
@@ -21,17 +20,6 @@
 
 .header > p {
   margin-bottom: 20px;
-}
-
-.educations > h1 {
-  margin-bottom: 20px;
-  font-weight: 600;
-}
-
-/* content bottom margin */
-.educations,
-.tech-experience {
-  margin-bottom: 40px;
 }
 
 .resume {
@@ -79,25 +67,6 @@
 .resume a:hover {
   text-decoration: none;
   /* Ensures no underline on hover */
-}
-
-.educations .col {
-  background-color: #232323;
-  border-radius: 4px;
-}
-
-.educations .col > h4 {
-  color: #ffffff;
-}
-
-.educations .col > p {
-  color: #bebebe;
-}
-
-.tech-experience li {
-  color: #e29ba7;
-  font-weight: bold;
-  border: 1px solid #e29ba7;
 }
 
 p {

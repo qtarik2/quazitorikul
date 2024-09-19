@@ -5,7 +5,7 @@ import {
   useLocation,
 } from "react-router-dom";
 import { AboutInformation, AboutMe } from "./components/About/AboutInformation";
-import Education from "./components/Education";
+import Education from "./components/Education/Education";
 import Projects from "./components/Project/Projects";
 import TechnicalExperience from "./components/TechnicalExperience";
 import TopBar from "./components/Topbar";
