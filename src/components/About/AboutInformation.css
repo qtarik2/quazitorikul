@@ -1,0 +1,55 @@
+.about-information {
+    margin-bottom: 100px;
+}
+
+.about-me {
+    background-color: #b7dbd8;
+    padding: 40px;
+}
+
+.about-me h1 {
+    color: black;
+    font-weight: 600;
+}
+
+/* For small screens, flex-column to stack items vertically */
+@media (max-width: 768px) {
+    .about-information .d-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-information .summary {
+        text-align: center;
+        font-size: x-large;
+        /* Center-align the text on mobile */
+        padding-top: 1rem;
+        /* Add some space between the image and summary */
+    }
+
+    .about-information img {
+        max-width: 200px;
+        /* Limit image size on small screens */
+        margin-bottom: 1rem;
+        /* Add space below the image */
+    }
+}
+
+/* For larger screens, flex-row to keep items in a row */
+@media (min-width: 768px) {
+    .about-information .d-flex {
+        flex-direction: row;
+        align-items: flex-start;
+        /* Align the items to the top for larger screens */
+    }
+
+    .about-information .summary {
+        text-align: left;
+        /* Left-align the text on larger screens */
+    }
+
+    .about-information img {
+        max-width: 250px;
+        /* Increase image size for larger screens */
+    }
+}

@@ -4,7 +4,7 @@ import {
   Route,
   useLocation,
 } from "react-router-dom";
-import { AboutInformation, AboutMe } from "./components/AboutInformation";
+import { AboutInformation, AboutMe } from "./components/About/AboutInformation";
 import Education from "./components/Education";
 import Projects from "./components/Project/Projects";
 import TechnicalExperience from "./components/TechnicalExperience";
