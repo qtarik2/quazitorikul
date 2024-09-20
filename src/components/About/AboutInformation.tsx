@@ -42,16 +42,7 @@ export function AboutMe() {
       <div className="container">
         <h1>Hi, I'm Quazi Torikul</h1>
         <p>
-          I am a 34 year old game programmer that's currently working at
-          Fatshark in Stockholm, Sweden. Before that, I worked as a web
-          developer for 9 years. I describe myself as a problem solver that
-          seeks opportunities to learn new things, at the same time, constantly
-          improving my skills. I enjoy creating games that feel great to play,
-          with clean code that is easy to read. I thrive on difficult
-          challenges, maybe a little too much sometimes as I have a hard time
-          letting go if I can not come up with a solution during a coding
-          session. Want to know more? You can find my contact information in my
-          resume at the top. You can also reach me on any of my social media.
+          I am a bla bla vla.
         </p>
       </div>
     </div>
