@@ -29,7 +29,7 @@ function Projects() {
                 />
                 <div className="card-desc">
                   <Button
-                    className="d-flex container-fluid"
+                    className="d-flex container"
                     styleSheet={{
                       color: "#e29ba7"
                     }}
@@ -40,7 +40,7 @@ function Projects() {
                     <>
                       {project.projectName}
                       <GetFontAwesomeIcon
-                        className="ms-auto"
+                        className="ms-auto mt-2"
                         icon={faAnglesRight}
                       />
                     </>

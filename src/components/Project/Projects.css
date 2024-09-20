@@ -37,6 +37,11 @@
   transition: height 0.3s ease;
 }
 
+.projects .card .card-desc .designation {
+  font-size:larger;
+  color: gray;
+}
+
 .projects .card .card-desc .description {
   display: -webkit-box;
   -webkit-line-clamp: 3;
@@ -55,7 +60,7 @@
 
 .projects .card .card-desc .description:hover {
   color: white;
-  transition: color 0.3s ease;
+  transition: color 0.3s ease, height 0.3s ease;
 
   -webkit-line-clamp: unset;
   overflow: visible;
@@ -139,7 +144,8 @@
   }
 
   .projects .card .card-desc .description {
-    -webkit-line-clamp: unset; 
+    -webkit-line-clamp: unset;
+    color: white;
   }
 
   .projects .card .card-desc {
