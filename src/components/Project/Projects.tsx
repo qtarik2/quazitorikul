@@ -45,7 +45,7 @@ function Projects() {
                       />
                     </>
                   </Button>
-                  <p className="designation">Game programmer</p>
+                  <p className="designation">{project.role}</p>
                   <p className="description">{project.projectDetail}</p>
                 </div>
               </div>

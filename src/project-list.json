@@ -5,8 +5,22 @@
     "projectDetail": "It's a drawing application designed for kids. This game is made on Unity for iOS platform.",
     "projectFootage": "gameplay-gif.gif",
     "members": 1,
-    "myContribution": "Fix admob interstitial ads not showing"
-
+    "myContribution": "Fix admob interstitial ads not showing",
+    "role": "Bug Fix",
+    "timeline": "2 days",
+    "engine": "Unity 3D",
+    "additionalDetails": [
+      {
+        "title": "abc",
+        "description": "",
+        "referenceSnipet": ""
+      },
+      {
+        "title": "abc",
+        "description": "",
+        "referenceSnipet": ""
+      }
+    ]
   },
   {
     "projectId": 1,
@@ -14,6 +28,9 @@
     "projectDetail": "Luddu is a classic board game with tournament feature. this game is made on Unity Engine for android platform. The team consist of two programmer and a backend react developer.",
     "projectFootage": "logo.svg",
     "members": 3,
-    "myContribution": "1. Facebook, Google and Email Login.\n2. Forget password system.\n3. Custom News feed system handled using API call."
+    "myContribution": "1. Facebook, Google and Email Login.\n2. Forget password system.\n3. Custom News feed system handled using API call.",
+    "role": "Game Programmer",
+    "timeline": "2 month",
+    "engine": "Unity 3D"
   }
 ]
