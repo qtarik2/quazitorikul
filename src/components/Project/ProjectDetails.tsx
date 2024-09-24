@@ -15,6 +15,11 @@ function ProjectDetails() {
   const navigate = useNavigate();
 
   const { project } = location.state || {};
+  interface AdditionalDetail {
+    title: string;
+    description: string;
+    referenceSnipet?: string;
+  }
 
   return (
     <div className="project-detail">
@@ -111,30 +116,25 @@ function ProjectDetails() {
         </div>
 
         <>
-          <div className="detail-section">
-            <h4>Title</h4>
-            <p>
-              Soul Knight is a project that started as part of my 2nd year at
-              NHTV University. I took the role of Lead Programmer, implementing
-              most of the game's functionality, some of which I feature here. In
-              total there were around 20 - 25 people on the project. This
-              project helped me learn a lot about Unreal Engine 4, and C++ in
-              general.
-            </p>
-            <img src="../gameplay-gif.gif" className="img-fluid" />
-          </div>
-          <div className="detail-section">
-            <h4>Title</h4>
-            <p>
-              Soul Knight is a project that started as part of my 2nd year at
-              NHTV University. I took the role of Lead Programmer, implementing
-              most of the game's functionality, some of which I feature here. In
-              total there were around 20 - 25 people on the project. This
-              project helped me learn a lot about Unreal Engine 4, and C++ in
-              general.
-            </p>
-            <img src="../gameplay-gif.gif" className="img-fluid" />
-          </div>
+          {project.additionalDetails && project.additionalDetails.length > 0 ? (
+            project.additionalDetails.map(
+              (detail: AdditionalDetail, index: number) => {
+                return (
+                  <div className="detail-section" key={index}>
+                    <h4>{detail.title}</h4>
+                    <p>{detail.description}</p>
+                    <img
+                      src={"../" + detail.referenceSnipet}
+                      className="img-fluid"
+                      alt=""
+                    />
+                  </div>
+                );
+              }
+            )
+          ) : (
+            <p>No additional details available</p>
+          )}
         </>
       </div>
     </div>
