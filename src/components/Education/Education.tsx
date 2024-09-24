@@ -14,14 +14,6 @@ function Education() {
               </p>
             </div>
           </div>
-          <div className="col-md-6">
-            <div className="box ms-md-2">
-              <h4>Multimedia University, Malaysia (2016-2021)</h4>
-              <p>
-                Bachelor of Computer Science Specialized in Game Development
-              </p>
-            </div>
-          </div>
         </div>
       </div>
     </div>
