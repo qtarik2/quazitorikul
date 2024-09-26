@@ -13,7 +13,7 @@ import ProjectDetails from "./components/Project/ProjectDetails";
 import "./App.css";
 
 function App() {
-  const skillList = ["C++", "C#"];
+  const skillList = ["Unity", "C#", "Unreal Engine", "C++", "NodeJS", "JavaScript", "MySQL", "NoSQL", "Git"];
 
   return (
     <Router>

@@ -17,21 +17,16 @@ function Projects() {
           return (
             <div className="col" key={project.projectId}>
               <div className="card">
-                <img
-                  src={project.projectFootage}
-                  className="img-fluid"
-                  alt="Project"
-                  style={{
-                    height: "300px",
-                    width: "100%", // Ensure full width inside the column
-                    objectFit: "cover",
-                  }}
-                />
+                <video height="300" width="100%" autoPlay muted loop>
+                  <source src={project.projectFootage} type="video/mp4" />
+                  Sorry, your browser doesn't support embedded videos.
+                </video>
+
                 <div className="card-desc">
                   <Button
                     className="d-flex container"
                     styleSheet={{
-                      color: "#e29ba7"
+                      color: "#e29ba7",
                     }}
                     onClick={() => {
                       navigate("/project-details/", { state: { project } });

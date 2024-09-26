@@ -3,6 +3,7 @@ import Button from "../Button";
 import GetFontAwesomeIcon from "../FontAwesome";
 import {
   faAnglesLeft,
+  faLink,
   faScrewdriverWrench,
   faStopwatch,
   faUser,
@@ -110,6 +111,19 @@ function ProjectDetails() {
                   styleSheet={{ color: "white" }}
                 />{" "}
                 Engine: {project.engine}
+              </p>
+              <p>
+                <GetFontAwesomeIcon
+                  icon={faLink}
+                  size="sm"
+                  styleSheet={{ color: "white" }}
+                />{" "}
+                Link to the App:{" "}
+                <a
+                  href={project.projectLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >Click me</a>
               </p>
             </div>
           </div>

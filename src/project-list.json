@@ -3,12 +3,36 @@
     "projectId": 2,
     "projectName": "Cinnamoroll 2",
     "projectDetail": "It's a drawing application designed for kids. This game is made on Unity for iOS platform.",
-    "projectFootage": "gameplay-gif.gif",
+    "projectFootage": "cinnamoroll.mp4",
     "members": 1,
     "myContribution": "Fix admob interstitial ads not showing",
     "role": "Bug Fix",
     "timeline": "2 days",
-    "engine": "Unity 3D",
+    "engine": "Unity 3D, iOS",
+    "additionalDetails": [
+      {
+        "title": "AdMob Interstitial",
+        "description": "They used premium drawing template from asset store. It came with pre-installed admob scripts. Used scripts were backdated and had obsolate code. I updated them with current admob version.",
+        "referenceSnipet": ""
+      },
+      {
+        "title": "Appstore Production",
+        "description": "After fixing admob issue I used client mac to upload in testflight for testing and pushing to production.",
+        "referenceSnipet": ""
+      }
+    ],
+    "projectLink": "https://apps.apple.com/vn/app/cinnamoroll-coloring-book/id6618157754"
+  },
+  {
+    "projectId": 1,
+    "projectName": "Luddu",
+    "projectDetail": "Luddu is a classic board game with tournament feature. this game is made on Unity Engine for android platform. The team consist of two programmer and a backend react developer.",
+    "projectFootage": "ludo.mp4",
+    "members": 3,
+    "myContribution": "1. Facebook, Google and Email Login.\n2. Forget password system.\n3. Custom News feed system handled using API call.",
+    "role": "Game Programmer",
+    "timeline": "2 month",
+    "engine": "Unity 3D, Android",
     "additionalDetails": [
       {
         "title": "abc",
@@ -20,17 +44,7 @@
         "description": "",
         "referenceSnipet": ""
       }
-    ]
-  },
-  {
-    "projectId": 1,
-    "projectName": "Luddu",
-    "projectDetail": "Luddu is a classic board game with tournament feature. this game is made on Unity Engine for android platform. The team consist of two programmer and a backend react developer.",
-    "projectFootage": "logo.svg",
-    "members": 3,
-    "myContribution": "1. Facebook, Google and Email Login.\n2. Forget password system.\n3. Custom News feed system handled using API call.",
-    "role": "Game Programmer",
-    "timeline": "2 month",
-    "engine": "Unity 3D"
+    ],
+    "projectLink": "https://play.google.com/store/apps/details?id=com.BlackSun.LUDDU"
   }
 ]
