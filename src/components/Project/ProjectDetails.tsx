@@ -123,7 +123,9 @@ function ProjectDetails() {
                   href={project.projectLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                >Click me</a>
+                >
+                  Click me
+                </a>
               </p>
             </div>
           </div>

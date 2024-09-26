@@ -1,25 +1,16 @@
-.projects > h1,
-.tech-experience > h1 {
+.projects > h1 {
   color: #8bc5bf;
   text-align: left;
 }
 
-.projects > h1,
-.tech-experience > h1 .project-detail {
+.projects > h1 {
   margin-bottom: 20px;
   font-weight: 600;
 }
 
 /* content bottom margin */
-.projects,
-.tech-experience {
+.projects {
   margin-bottom: 40px;
-}
-
-.tech-experience li {
-  color: #e29ba7;
-  font-weight: bold;
-  border: 1px solid #e29ba7;
 }
 
 .projects .col {
@@ -38,7 +29,7 @@
 }
 
 .projects .card .card-desc .designation {
-  font-size:larger;
+  font-size: larger;
   color: gray;
 }
 

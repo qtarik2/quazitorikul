@@ -7,7 +7,7 @@ import {
 import { AboutInformation, AboutMe } from "./components/About/AboutInformation";
 import Education from "./components/Education/Education";
 import Projects from "./components/Project/Projects";
-import TechnicalExperience from "./components/TechnicalExperience";
+import TechnicalExperience from "./components/Technical Experience/TechnicalExperience";
 import TopBar from "./components/Topbar";
 import ProjectDetails from "./components/Project/ProjectDetails";
 import "./App.css";

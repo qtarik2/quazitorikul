@@ -1,0 +1,27 @@
+.tech-experience {
+  margin-bottom: 40px;
+}
+
+.tech-experience > h1 {
+  color: #8bc5bf;
+  text-align: left;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.tech-experience li {
+  color: #e29ba7;
+  font-weight: bold;
+  border: 1px solid #e29ba7;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px 20px;
+}
+
+.tech-experience ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap; 
+} 
