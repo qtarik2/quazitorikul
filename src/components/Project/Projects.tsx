@@ -17,10 +17,20 @@ function Projects() {
           return (
             <div className="col" key={project.projectId}>
               <div className="card">
-                <video height="300" width="100%" autoPlay muted loop>
-                  <source src={project.projectFootage} type="video/mp4" />
-                  Sorry, your browser doesn't support embedded videos.
-                </video>
+                <div className="video-container">
+                  <video
+                    autoPlay
+                    muted
+                    loop
+                    style={{
+                      objectFit: project.footageData
+                        .fit as React.CSSProperties["objectFit"],
+                    }}
+                  >
+                    <source src={project.footageData.src} type="video/mp4" />
+                    Sorry, your browser doesn't support embedded videos.
+                  </video>
+                </div>
 
                 <div className="card-desc">
                   <Button

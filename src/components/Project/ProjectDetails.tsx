@@ -47,17 +47,30 @@ function ProjectDetails() {
           {project ? (
             <>
               <figure>
-                <img
-                  src={"../" + project.projectFootage}
-                  className="img-fluid"
-                  alt="Profile"
+                <div
+                  className="video-container"
                   style={{
-                    width: "100%", // Allow image to scale with its container
-                    height: "auto",
-                    objectFit: "cover", // Ensures the aspect ratio is maintained
-                    maxWidth: "1280px", // Max width constraint for larger screens
+                    height: "600px", // Set the height to 600px for the container
                   }}
-                />
+                >
+                  <video
+                    autoPlay
+                    muted
+                    loop
+                    style={{
+                      objectFit: project.footageData
+                        .fit as React.CSSProperties["objectFit"],
+                      height: "100%", // Ensure the video fills the container's height
+                      width: "100%",
+                    }}
+                  >
+                    <source
+                      src={"../" + project.footageData.src}
+                      type="video/mp4"
+                    />
+                    Sorry, your browser doesn't support embedded videos.
+                  </video>
+                </div>
                 <figcaption>
                   <h1>{[project.projectName]}</h1>
                 </figcaption>
@@ -149,7 +162,7 @@ function ProjectDetails() {
               }
             )
           ) : (
-            <p>No additional details available</p>
+            <p className="text-light">No additional details available</p>
           )}
         </>
       </div>
