@@ -1,4 +1,4 @@
-import { useLocation, useNavigate, useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import Button from "../Button";
 import GetFontAwesomeIcon from "../FontAwesome";
 import {
@@ -17,8 +17,6 @@ import React from "react";
 
 function ProjectDetails() {
   const { projectId } = useParams();
-  // const [project, setProject] = React.useState(null);
-  // const location = useLocation();
   const navigate = useNavigate();
 
   const project = ProjectList.find((p) => p.projectId === Number(projectId));
