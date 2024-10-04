@@ -1,4 +1,4 @@
-import { useLocation, useNavigate } from "react-router-dom";
+import { useLocation, useNavigate, useParams } from "react-router-dom";
 import Button from "../Button";
 import GetFontAwesomeIcon from "../FontAwesome";
 import {
@@ -10,12 +10,18 @@ import {
   faUserGroup,
 } from "@fortawesome/free-solid-svg-icons";
 import "./Projects.css";
+import CodeBlockComponent from "../CodeBlockComponent";
+import { nord } from "react-code-blocks";
+import ProjectList from "../../project-list.json";
+import React from "react";
 
 function ProjectDetails() {
-  const location = useLocation();
+  const { projectId } = useParams();
+  // const [project, setProject] = React.useState(null);
+  // const location = useLocation();
   const navigate = useNavigate();
 
-  const { project } = location.state || {};
+  const project = ProjectList.find((p) => p.projectId === Number(projectId));
   interface AdditionalDetail {
     title: string;
     description: string;
@@ -40,7 +46,7 @@ function ProjectDetails() {
           }}
         >
           <>
-            <GetFontAwesomeIcon icon={faAnglesLeft} /> Go Back
+            <GetFontAwesomeIcon icon={faAnglesLeft} /> Go Back {projectId}
           </>
         </Button>
         <div>
@@ -50,7 +56,7 @@ function ProjectDetails() {
                 <div
                   className="video-container"
                   style={{
-                    height: "600px", // Set the height to 600px for the container
+                    height: "600px",
                   }}
                 >
                   <video
@@ -60,7 +66,7 @@ function ProjectDetails() {
                     style={{
                       objectFit: project.footageData
                         .fit as React.CSSProperties["objectFit"],
-                      height: "100%", // Ensure the video fills the container's height
+                      height: "100%",
                       width: "100%",
                     }}
                   >
@@ -72,7 +78,7 @@ function ProjectDetails() {
                   </video>
                 </div>
                 <figcaption>
-                  <h1>{[project.projectName]}</h1>
+                  <h1>{project.projectName}</h1>
                 </figcaption>
               </figure>
             </>
@@ -83,11 +89,15 @@ function ProjectDetails() {
         <div className="row justify-content-between">
           <div className="col-md-6 mb-3 mb-md-0">
             <div className="box">
-              <h4>About</h4>
-              <p>
-                Bug Shooter initially started as a gradable assignment for a
-                FutureGames course.
-              </p>
+              <h4>Contribution</h4>
+              {project?.myContribution
+                .split("\\n")
+                .map((line: string, index: number) => (
+                  <p key={index}>
+                    {line}
+                    <br />
+                  </p>
+                ))}
             </div>
           </div>
           <div className="col-md-6">
@@ -99,7 +109,7 @@ function ProjectDetails() {
                   size="sm"
                   styleSheet={{ color: "white" }}
                 />{" "}
-                Role: {project.role}
+                Role: {project?.role}
               </p>
               <p>
                 <GetFontAwesomeIcon
@@ -107,7 +117,7 @@ function ProjectDetails() {
                   size="sm"
                   styleSheet={{ color: "white" }}
                 />{" "}
-                Team size: {project.members}
+                Team size: {project?.members}
               </p>
               <p>
                 <GetFontAwesomeIcon
@@ -115,7 +125,7 @@ function ProjectDetails() {
                   size="sm"
                   styleSheet={{ color: "white" }}
                 />{" "}
-                Time frame: {project.timeline}
+                Time frame: {project?.timeline}
               </p>
               <p>
                 <GetFontAwesomeIcon
@@ -123,7 +133,7 @@ function ProjectDetails() {
                   size="sm"
                   styleSheet={{ color: "white" }}
                 />{" "}
-                Engine: {project.engine}
+                Engine: {project?.engine}
               </p>
               <p>
                 <GetFontAwesomeIcon
@@ -133,7 +143,7 @@ function ProjectDetails() {
                 />{" "}
                 Link to the App:{" "}
                 <a
-                  href={project.projectLink}
+                  href={project?.projectLink}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -145,18 +155,22 @@ function ProjectDetails() {
         </div>
 
         <>
-          {project.additionalDetails && project.additionalDetails.length > 0 ? (
-            project.additionalDetails.map(
+          {project?.additionalDetails && project?.additionalDetails.length > 0 ? (
+            project?.additionalDetails.map(
               (detail: AdditionalDetail, index: number) => {
                 return (
                   <div className="detail-section" key={index}>
                     <h4>{detail.title}</h4>
                     <p>{detail.description}</p>
-                    <img
-                      src={"../" + detail.referenceSnipet}
-                      className="img-fluid"
-                      alt=""
-                    />
+                    {detail.referenceSnipet &&
+                      detail.referenceSnipet.length > 0 && (
+                        <CodeBlockComponent
+                          code={detail.referenceSnipet}
+                          theme={nord}
+                          language="c#"
+                          highlight="15,17"
+                        />
+                      )}
                   </div>
                 );
               }

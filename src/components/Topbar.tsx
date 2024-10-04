@@ -1,12 +1,19 @@
 import { faGithubSquare, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faCircleDown } from "@fortawesome/free-solid-svg-icons";
 import GetFontAwesomeIcon from "./FontAwesome";
+import { useNavigate } from "react-router-dom";
 
 function TopBar() {
+  const navigate = useNavigate();
+
   return (
     <nav className="navbar fixed-top bg-body navbar-expand-lg">
       <div className="container d-flex align-items-start">
-        <a className="header navbar-brand" href="#">
+        <a
+          className="header navbar-brand"
+          onClick={() => navigate("/")} // Trigger navigate on click
+          style={{ cursor: "pointer" }} // Add pointer cursor to indicate a clickable link
+        >
           <h1 className="display-4">Quazi Torikul Alam</h1>
           <p className="navbar-text">Game Programmer</p>
         </a>
@@ -42,7 +49,7 @@ function TopBar() {
               <li className="nav-item">
                 <div className="resume">
                   <a
-                    href="https://your-resume-link.com"
+                    href="QuaziTorikulAlam_GameProgrammer_Resume.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="desc"

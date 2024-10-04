@@ -4,10 +4,9 @@
     "projectName": "Cinnamoroll 2",
     "projectDetail": "It's a drawing application designed for kids. This game is made on Unity for iOS platform.",
     "footageData": {
-      "src":"cinnamoroll.mp4",
-      "type":"video",
-      "fit": "cover"      
-
+      "src": "cinnamoroll.mp4",
+      "type": "video",
+      "fit": "cover"
     },
     "members": 1,
     "myContribution": "Fix admob interstitial ads not showing",
@@ -38,11 +37,21 @@
       "fit": "contain"
     },
     "members": 3,
-    "myContribution": "1. Facebook, Google and Email Login.\n2. Forget password system.\n3. Custom News feed system handled using API call.",
+    "myContribution": "1. Facebook, Google, Guest and Email Login. \\n2. Forget password system. \\n3. Custom News feed system handled using API call.",
     "role": "Game Programmer",
     "timeline": "2 month",
     "engine": "Unity 3D, Android",
     "additionalDetails": [
+      {
+        "title": "Login System",
+        "description": "This project contain 3 types of login system guest login, email login and social login. For social login we use Facebook SDK and Google Play Game Service SDK to retrieve user data and pass it to custom login api provided by React developer.",
+        "referenceSnipet": "internal void ProcessAuthentication(SignInStatus status) {\\n    AuthenticationManager.OnLoginStart?.Invoke();\\n    if (status == SignInStatus.Success) {\\n        Debug.Log(\\\"Successfully authenticated with Google Play Games.\\\");\\n        string displayname = PlayGamesPlatform.Instance.GetUserDisplayName();\\n        string id = PlayGamesPlatform.Instance.localUser.id;\\n        UserRegisterRequestModel userModel = new() {\\n            Id = id,\\n            Type = PlayerPrefNameString.GOOGLE,\\n            Name = displayname,\\n        };\\n        var jsonSettings = new JsonSerializerSettings {\\n            DefaultValueHandling = DefaultValueHandling.Ignore\\n        };\\n        string jsonData = JsonConvert.SerializeObject(userModel, jsonSettings);\\n        APIList aPIList = new();\\n        WebRequests.Post(aPIList.GetSocialLoginEndpoint(), jsonData, OnSuccessSocialLogin, OnErrorSocialLogin);\\n    } else {\\n        AuthenticationManager.OnLoginFailed?.Invoke(\\\"Failed to authenticate with Google Play Games.\\\");\\n        Debug.Log(\\\"Failed to authenticate with Google Play Games.\\\");\\n    }\\n}"
+      },
+      {
+        "title": "Admob",
+        "description": "The task is to add Interstitial, Banner, App Open ads with Unity ads mediation.",
+        "referenceSnipet": ""
+      }
     ],
     "projectLink": "https://play.google.com/store/apps/details?id=com.BlackSun.LUDDU"
   }
