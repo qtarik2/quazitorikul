@@ -13,7 +13,17 @@ import ProjectDetails from "./components/Project/ProjectDetails";
 import "./App.css";
 
 function App() {
-  const skillList = ["Unity", "C#", "Unreal Engine", "C++", "NodeJS", "JavaScript", "MySQL", "NoSQL", "Git"];
+  const skillList = [
+    "Unity",
+    "C#",
+    "Unreal Engine",
+    "C++",
+    "NodeJS",
+    "JavaScript",
+    "MySQL",
+    "NoSQL",
+    "Git",
+  ];
 
   return (
     <Router>
@@ -25,7 +35,7 @@ function App() {
           <div className="content">
             <Routes>
               <Route path="/" element={<MainContent skillList={skillList} />} />
-              <Route path="/project-details" element={<ProjectDetails />} />
+              <Route path="/project-details/:projectId" element={<ProjectDetails />} />
             </Routes>
           </div>
         </div>

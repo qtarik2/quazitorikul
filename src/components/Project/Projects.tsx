@@ -39,7 +39,7 @@ function Projects() {
                       color: "#e29ba7",
                     }}
                     onClick={() => {
-                      navigate("/project-details/", { state: { project } });
+                      navigate(`/project-details/${project.projectId}`);
                     }}
                   >
                     <>
