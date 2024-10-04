@@ -1,4 +1,4 @@
-import { faGithubSquare, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faGithubSquare, faLinkedin, faSquareUpwork } from "@fortawesome/free-brands-svg-icons";
 import { faCircleDown } from "@fortawesome/free-solid-svg-icons";
 import GetFontAwesomeIcon from "./FontAwesome";
 import { useNavigate } from "react-router-dom";
@@ -23,7 +23,20 @@ function TopBar() {
             <ul className="nav justify-content-end">
               <li className="nav-item">
                 <a
-                  className="nav-link active"
+                  className="nav-link"
+                  aria-current="page"
+                  href="https://www.upwork.com/freelancers/~01425355c9269055c4"
+                  target="_blank"
+                >
+                  <GetFontAwesomeIcon
+                    icon={faSquareUpwork}
+                    size="3x"
+                  ></GetFontAwesomeIcon>
+                </a>
+              </li>
+              <li className="nav-item">
+                <a
+                  className="nav-link"
                   aria-current="page"
                   href="https://www.linkedin.com/in/qtarik2/"
                   target="_blank"
