@@ -44,7 +44,7 @@ function ProjectDetails() {
           }}
         >
           <>
-            <GetFontAwesomeIcon icon={faAnglesLeft} /> Go Back {projectId}
+            <GetFontAwesomeIcon icon={faAnglesLeft} /> Go Back
           </>
         </Button>
         <div>
@@ -153,7 +153,8 @@ function ProjectDetails() {
         </div>
 
         <>
-          {project?.additionalDetails && project?.additionalDetails.length > 0 ? (
+          {project?.additionalDetails &&
+          project?.additionalDetails.length > 0 ? (
             project?.additionalDetails.map(
               (detail: AdditionalDetail, index: number) => {
                 return (
