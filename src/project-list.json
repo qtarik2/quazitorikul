@@ -1,6 +1,6 @@
 [
   {
-    "projectId": 2,
+    "projectId": 3,
     "projectName": "Cinnamoroll 2",
     "projectDetail": "It's a drawing application designed for kids. This game is made on Unity for iOS platform.",
     "footageData": {
@@ -28,7 +28,7 @@
     "projectLink": "https://apps.apple.com/vn/app/cinnamoroll-coloring-book/id6618157754"
   },
   {
-    "projectId": 1,
+    "projectId": 2,
     "projectName": "Luddu",
     "projectDetail": "Luddu is a classic board game with tournament feature. this game is made on Unity Engine for android platform. The team consist of two programmer and a backend react developer.",
     "footageData": {
@@ -54,5 +54,43 @@
       }
     ],
     "projectLink": "https://play.google.com/store/apps/details?id=com.BlackSun.LUDDU"
+  },
+  {
+    "projectId": 1,
+    "projectName": "Legends",
+    "projectDetail": "It's an educational application that let you know about Armenian history. It aims to educate high school students to handle environmental issues. This game is made on Unity for Andriod, iOS and WebGL platform.",
+    "footageData": {
+      "src": "MyLegends.mp4",
+      "type": "video",
+      "fit": "cover"
+    },
+    "members": 1,
+    "myContribution": "1. Adding new features. \\n2. History popup modal. \\n3. Firebase Push notification \\n4. New scenarios",
+    "role": "Game Programmer, Prototype",
+    "timeline": "2 Months",
+    "engine": "Unity 3D, iOS, Android, WebGL",
+    "additionalDetails": [
+      {
+        "title": "Buildings",
+        "description": "Game starts with non functional broken buildings in every scenario. Players can update buildings with earned coins though gameplay. Different building has different actions. E.g Anti hail can be used to stop rain or hail.",
+        "referenceSnipet": ""
+      },
+      {
+        "title": "Milking Process",
+        "description": "",
+        "referenceSnipet": ""
+      },
+      {
+        "title": "Planting System",
+        "description": "",
+        "referenceSnipet": ""
+      },
+      {
+        "title": "Modal Popup",
+        "description": "",
+        "referenceSnipet": ""
+      }
+    ],
+    "projectLink": "https://www.mylegends.am/"
   }
 ]
