@@ -1,6 +1,63 @@
 [
   {
-    "projectId": 3,
+    "projectId": 6,
+    "projectName": "Blocktiles",
+    "projectDetail": "\"Block Tiles Earn Cyrpto\" is a blockchain-integrated game inspired by classic block-stacking gameplay. Players are rewarded with virtual currency based on the number of lines they clear during gameplay. Once users accumulate enough currency, they can request real-world payouts directly to their Binance or Coinbase account. This system incentivizes skillful play while integrating a real-money reward mechanism."
+,
+    "footageData": {
+      "src": "blocktiles.mp4",
+      "type": "video",
+      "fit": "contain"
+    },
+    "members": 2,
+    "myContribution": "1. Implemented multiple authentication options including Email, Facebook, Google, and Guest login.\\n2. Integrated PlayFab backend for account management, economy, and data handling.\\n3. Added AdMob monetization including Banner, Interstitial, Rewarded, and App Open Ads.\\n4. Developed Binance withdrawal functionality for crypto payouts.\\n5. Strengthened security to prevent exploits and cheating behaviors.\\n6. Provided live support to players with login and account-related issues.\\n7. Diagnosed and resolved gameplay and system bugs across devices.",
+    "role": "Core Developer",
+    "timeline": "~",
+    "engine": "Unity 3D, Android",
+    "additionalDetails": [
+      {
+        "title": "Reward System & Payout Mechanism",
+        "description": "One of the key challenges was implementing a reward structure that balanced engaging gameplay with real-world payouts. Users were awarded virtual currency upon completing levels based on difficulty. Once they reached the withdrawal threshold, they could request payment to their Binance or Coinbase accounts by submitting their email. Ensuring this system was seamless, secure, and abuse-proof required thoughtful design and ongoing refinement.",
+        "referenceSnipet": ""
+      },
+      {
+        "title": "Exploits & Fair Play",
+        "description": "As the game involved real monetary value, preventing unfair advantages was critical. One notable exploit involved users manipulating their device's local time to bypass the withdrawal cooldown period. To counter this, we integrated PlayFab's trusted server time to validate all withdrawal timing and enforce cooldowns reliably. Users attempting to bypass this mechanism were automatically flagged and temporarily banned. Ongoing monitoring and backend-side validation helped maintain a fair and cheat-free environment.",
+        "referenceSnipet": ""
+      }
+    ],
+    "projectLink": "https://apps.apple.com/vn/app/cinnamoroll-coloring-book/id6618157754"
+  },
+  {
+    "projectId": 5,
+    "projectName": "Minesweeper",
+    "projectDetail": "\"Minesweeper Earn Crypto\" is a blockchain-integrated casual game inspired by the classic Minesweeper gameplay. Players could choose from three difficulty levels — Easy, Medium, and Hard — and were awarded virtual currency upon successfully clearing each round. The reward amount varied depending on the selected difficulty. Once players accumulated enough virtual currency, they could initiate a withdrawal by providing their Binance or Coinbase email address, allowing them to receive crypto payouts directly to their exchange wallets. The game blended nostalgic gameplay with real-world incentives, encouraging both strategy and engagement.",
+    "footageData": {
+      "src": "minesweeper.mp4",
+      "type": "video",
+      "fit": "contain"
+    },
+    "members": 1,
+    "myContribution": "1. Implemented multiple authentication options including Email, Facebook, Google, and Guest login.\\n2. Integrated PlayFab backend for account management, economy, and data handling.\\n3. Added AdMob monetization including Banner, Interstitial, Rewarded, and App Open Ads.\\n4. Developed Binance withdrawal functionality for crypto payouts.\\n5. Strengthened security to prevent exploits and cheating behaviors.\\n6. Provided live support to players with login and account-related issues.\\n7. Diagnosed and resolved gameplay and system bugs across devices.",
+    "role": "Core Developer",
+    "timeline": "~",
+    "engine": "Unity 3D, Android",
+    "additionalDetails": [
+      {
+        "title": "Reward System & Payout Mechanism",
+        "description": "One of the key challenges was implementing a reward structure that balanced engaging gameplay with real-world payouts. Users were awarded virtual currency upon completing levels based on difficulty. Once they reached the withdrawal threshold, they could request payment to their Binance or Coinbase accounts by submitting their email. Ensuring this system was seamless, secure, and abuse-proof required thoughtful design and ongoing refinement.",
+        "referenceSnipet": ""
+      },
+      {
+        "title": "Exploits & Fair Play",
+        "description": "As the game involved real monetary value, preventing unfair advantages was critical. One notable exploit involved users manipulating their device's local time to bypass the withdrawal cooldown period. To counter this, we integrated PlayFab's trusted server time to validate all withdrawal timing and enforce cooldowns reliably. Users attempting to bypass this mechanism were automatically flagged and temporarily banned. Ongoing monitoring and backend-side validation helped maintain a fair and cheat-free environment.",
+        "referenceSnipet": ""
+      }
+    ],
+    "projectLink": "https://apps.apple.com/vn/app/cinnamoroll-coloring-book/id6618157754"
+  },
+  {
+    "projectId": 4,
     "projectName": "Cinnamoroll 2",
     "projectDetail": "It's a drawing application designed for kids. This game is made on Unity for iOS platform.",
     "footageData": {
@@ -28,7 +85,7 @@
     "projectLink": "https://apps.apple.com/vn/app/cinnamoroll-coloring-book/id6618157754"
   },
   {
-    "projectId": 2,
+    "projectId": 3,
     "projectName": "Luddu",
     "projectDetail": "Luddu is a classic board game with tournament feature. this game is made on Unity Engine for android platform. The team consist of two programmer and a backend react developer.",
     "footageData": {
@@ -56,11 +113,11 @@
     "projectLink": "https://play.google.com/store/apps/details?id=com.BlackSun.LUDDU"
   },
   {
-    "projectId": 1,
+    "projectId": 2,
     "projectName": "Legends",
     "projectDetail": "It's an educational application that let you know about Armenian history. It aims to educate high school students to handle environmental issues. This game is made on Unity for Andriod, iOS and WebGL platform.",
     "footageData": {
-      "src": "MyLegends.mp4",
+      "src": "legends.mp4",
       "type": "video",
       "fit": "cover"
     },
@@ -92,5 +149,35 @@
       }
     ],
     "projectLink": "https://www.mylegends.am/"
+  },
+  {
+    "projectId": 1,
+    "projectName": "Business App (Personal)",
+    "projectDetail": "A custom inventory and order management app designed to streamline operations across two family-run businesses — a tiles and sanitary dealership, and a wall paint store. The system adapts to the unique workflows and measurement units of each showroom, ensuring accurate stock, order, and role-based access management.",
+    "footageData": {
+      "src": "businessapp.mp4",
+      "type": "video",
+      "fit": "cover"
+    },
+    "members": 1,
+    "myContribution": "1. Developed custom login with access-level-based dashboards.\\n2. Implemented dual-unit product ordering (sft/carton vs. pieces).\\n3. Integrated Google Sheets import for bulk stock entry.\\n4. Developed dynamic UI to separate tiles and paint showroom workflows.\\n5. Handled inventory, order, and user account management.",
+    "role": "Full Stack Developer",
+    "timeline": "",
+    "engine": "Unity 3D, Node JS, MongoDB",
+    "additionalDetails": [
+      {
+        "title": "Complex Unit Handling",
+        "description": "Each product followed a different measurement standard — such as square feet, cartons, pieces, grams, or liters. The system had to intelligently identify and adapt to each type for accurate stock tracking and billing."
+      },
+      {
+        "title": "PDF Invoice Generation Without Unity SDK",
+        "description": "I used Unity 3D to develop my app because I am a game developer and not familiar with other app frameworks. Since there is no PDF generator SDK in Unity, I had to use a .NET PDF library to create invoice PDF files directly from the Unity app."
+      },
+      {
+        "title": "High-Stakes Validation Challenges",
+        "description": "Accurate calculations were critical. A small logic or validation issue could lead to discrepancies in billing, risking business credibility. Rapid debugging and issue resolution were essential to maintain trust with customers."
+      }
+    ],
+    "projectLink": ""
   }
 ]
