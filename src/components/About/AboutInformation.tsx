@@ -7,7 +7,7 @@ export function AboutInformation() {
     //     <div className="d-flex flex-column flex-md-row align-items-center">
     //       <div className="p-2">
     //         <img
-    //           src="profile.svg"
+    //           src={`${import.meta.env.BASE_URL}profile.svg`}
     //           className="fixed-image img-fluid"
     //           alt="Profile"
     //         />
@@ -25,7 +25,7 @@ export function AboutInformation() {
       <div className="row justify-content-center align-items-center">
         <div className="col-md-3 mb-3 mb-md-0 p-2">
           <img
-            src="profile.svg"
+            src={`${import.meta.env.BASE_URL}profile.svg`}
             className="fixed-image img-fluid"
             alt="Profile Image"
           />
@@ -48,8 +48,12 @@ export function AboutMe() {
         <p>
           I am a <strong>Game Development</strong> graduate from Multimedia
           University, Malaysia, originally from Bangladesh, and currently
-          working as a <strong>freelance</strong> game programmer. I have
-          previously worked remotely as a Game Developer for GameSoc Studios,
+          working as a <strong>Game Developer</strong> at{" "}
+          <a href="https://auleek.com/" target="_blank" rel="noopener noreferrer">
+            Auleek
+          </a>{" "}
+          since January 2026. Previously, I worked as a freelance game
+          programmer and remotely as a Game Developer for GameSoc Studios,
           Cyprus.
         </p>
         <p>

@@ -1,5 +1,71 @@
 [
   {
+    "projectId": 8,
+    "projectName": "Robbery-Simulator",
+    "projectDetail": "\"Robbery-Simulator\" is an in-development Roblox multiplayer heist game and the sibling title to Clean-a-Crime. Where Clean-a-Crime is about cleaning up after the job, this one is the job itself: players enter a populated location, control the room, crack what is locked, take what is valuable, and get out before the heat rises and the police arrive. The game is built around a reactive population rather than static props. Every customer, clerk, manager and security guard is a live agent that sees, decides and reacts on its own, so the same location plays differently depending on how loudly the crew works. It shares its foundation with Clean-a-Crime, reusing that project's proven lobby, anti-cheat and global alert systems, while the entry and exit flow, gunplay, hacking, heat, inventory, loot, missions, NPCs and police AI are all built new on the same Rojo, Knit, Roact and Rodux stack.",
+    "footageData": {
+      "src": "placeholder.mp4",
+      "type": "video",
+      "fit": "contain"
+    },
+    "members": 4,
+    "myContribution": "1. Set up the project foundation: restructured the codebase into per-system folders, ported and adapted the proven lobby, equipment, stat upgrade, leaderboard, global alert, settings and anti-cheat systems from Clean-a-Crime, and authored the technical documentation set and GDD the team works against.\\n2. Designed and built the NPC behaviour framework: one agent class driven by swappable, self-registering behaviour objects (wander, cower, report, hostile, escape, subdued) selected by a pure weighted reaction roll, with archetypes modelled as shared flyweight config rather than subclasses.\\n3. Built the perception layer: per-agent sensors with true line-of-sight checks, witness detection on attacks, and shared targeting and attack logic used by both civilian and police chase behaviours.\\n4. Replaced Roblox's PathfindingService with a custom navigation stack: a walkability grid rasterised from raycasts with per-cell clearance, a synchronous eight-way A* search with corner-cut prevention and string pulling, and a crowd avoidance layer built on a per-tick spatial hash.\\n5. Built the NPC spawning pipeline: archetype-affinity spawn points, model-driven rigs, R15 animation, whole-map population passes, and collision groups that stop NPCs from colliding with each other.\\n6. Implemented the player health system with revive interactions, plus the Area of Control and suppression model that determines how much of the room the crew currently holds.\\n7. Implemented the loot and evacuation layer: a shared lootable contract, dropped loot, hold-to-loot interaction prompts, and the heat-triggered evacuation that empties the location.\\n8. Built the developer tooling the rest of the team tests against: a chat-command spawn harness, nav grid overlay, sensor gizmos, state nameplates, health bars and a developer panel.",
+    "role": "Game Developer",
+    "timeline": "July 2026 - Present (In Development)",
+    "engine": "Roblox Studio, Luau (Rojo, Knit, Roact, Rodux)",
+    "additionalDetails": [
+      {
+        "title": "Replacing the Engine's Pathfinder with a Raycast Nav Grid",
+        "description": "NPCs were walking straight into walls, shelving and poles. Several causes stacked up: no navigation layer at all beneath the behaviours, corner-cutting from a waypoint radius set too wide, line-of-sight rays that terminated inside the target's own body, and a slope limit permissive enough that NPCs climbed the shelves instead of walking around them. The structural cause was that the engine's navmesh disagreed with what a raycast actually hits - mesh walls omitted by collision fidelity, shelf tops treated as floor, and a single agent radius that could not be simultaneously narrow enough for a shop aisle and wide enough for a security guard. Navigation was rebuilt on a grid rasterised from raycasts, so it cannot disagree with physics because raycasts are what build it, searched by a synchronous eight-way A* that forbids diagonals through corner gaps and string-pulls the result. Clearance became per-archetype and requested at search time, which is what agent radius should have been. Because the search is synchronous, an entire category of scaffolding that existed only to survive an async pathfinder disappeared - the request queue, generation guard, straight-line fallback, failure counter, back-off and route truncation - cutting the movement agent to a third of its size, while local look-ahead and stuck detection were kept for the things a static grid genuinely cannot see, such as another NPC or a door that just closed.",
+        "referenceSnipet": ""
+      },
+      {
+        "title": "Agents, Behaviours and Archetypes",
+        "description": "Every NPC in the location is a live agent rather than a scripted prop, so the design had to stay cheap at population scale and open to new reactions. The architecture separates three things: an agent that owns one NPC's model, health and lifetime; a behaviour object that owns what it is currently doing and can be swapped at runtime; and a registry that ticks every live agent on a fixed schedule. Behaviours self-register into a lookup, so adding a reaction means adding a file rather than editing a state machine. The four archetypes - customer, clerk, manager and security guard - are flyweights: one shared, read-only table per type that every NPC of that type points at, never cloned and never written to, with all mutable state living on the agent. They differ only in values such as health, speed, reaction weights and cash band, which is why the whole population is served by a single agent class rather than four subclasses. The reaction roll that decides whether an NPC cowers, reports or turns hostile is kept as a pure function, so it can be tested without spawning anything.",
+        "referenceSnipet": ""
+      },
+      {
+        "title": "Building on a Shipped Codebase",
+        "description": "Because this title shares a studio, a stack and a genre with Clean-a-Crime, pre-production was spent deliberately deciding what to carry over rather than starting clean. Systems that had already been hardened in a live game - the lobby and host flow, anti-cheat, global alerts, equipment and stat upgrades, leaderboards and settings - were ported and adapted first, which meant the new game had a working shell to test inside before any of its own mechanics existed. The codebase was then restructured so each system owns a folder spanning its server services, client controllers and shared config, with a written technical document kept per system alongside the GDD. With several developers working in parallel on separate mechanics, that documentation is what keeps the boundaries between systems explicit as the new gunplay, hacking, heat, inventory, loot, mission and police systems land.",
+        "referenceSnipet": ""
+      }
+    ],
+    "projectLink": ""
+  },
+  {
+    "projectId": 7,
+    "projectName": "Clean-a-Crime",
+    "projectDetail": "\"Clean-a-Crime\" is a live Roblox multiplayer game where a crew of players is hired to erase the evidence left behind after a heist. Teams pick a map and difficulty from the lobby, drop into a crime scene, and work against the clock to scrub bloodstains, grab and grind up evidence and bodies, unlock sealed rooms and the vault by hacking scattered control panels, rearrange disturbed objects back into place, and capture and extract hostages before the job is called in. The game runs a full live-service loop on top of that core: maps and difficulties unlock by level, cash and XP feed equipment and stat upgrades, and the economy is driven by gamepasses, developer products, limited starter and VIP offers, daily rewards, daily tasks, a spin wheel, referrals and leaderboards. Seasonal events such as the Clown, Ghost, Rainbow and Glitch events swap in event maps and event-only objectives. It is built with Rojo and Luau on a Knit service and controller architecture with a Roact and Rodux UI layer.",
+    "footageData": {
+      "src": "placeholder.mp4",
+      "type": "video",
+      "fit": "contain"
+    },
+    "members": 5,
+    "myContribution": "1. Built the core grab, carry and drop system (Grab System 2.0) including client-authoritative grabbing for responsiveness, ghost placement preview, wall awareness, drop validation, carry stack limits and full PC, mobile and gamepad support.\\n2. Built the grinder and disposal loop that converts grabbed evidence and bodies into payout, along with its zone, effects and translucency handling.\\n3. Designed and implemented the door unlock system: procedurally spawned hacking panels, multi-panel vault doors, and placement rules that keep every run solvable.\\n4. Implemented the hostage capture system end to end, from spawner and rope-constrained dragging to animations and delivery zones.\\n5. Implemented the rearrange-object objective and the lighthouse generator objective, including their spawners, task templates and client controllers.\\n6. Owned the mission flow: refactored MissionService, extracted its logic layers, added the exit handler and built the animated mission summary screen.\\n7. Owned the lobby: host panel, map and difficulty selection with level gating, map unlocks, teleport flow, the party system through two revisions and party reward boosts.\\n8. Built the equipment system with its shop, tier previews, equip flow and upgrade progression, plus the stat upgrade panels.\\n9. Built the monetization layer: gamepasses, developer products, pack purchases, limited starter and VIP offers with expiry timers, the premium shop, a centralized product registry and price fetcher, and a failsafe service that re-grants purchases that failed to award.\\n10. Built the retention systems: seven-day daily rewards with offline grants, the daily task system, free chests, the spin wheel, social media rewards and the referral system.\\n11. Built live event content and systems including the Clown event (patrol paths, stain trails, rainbow visuals, collision groups) and the seasonal event maps and event-only tasks.\\n12. Wrote an object-oriented input system with rebindable actions and console support, and a shared UI toolkit (toasts, global alerts, panel stack, responsive scaling) used across the Roact and Rodux front end.\\n13. Instrumented the game with custom analytics and funnel events for lobby, tutorial, map selection and grab or release failures.",
+    "role": "Game Developer",
+    "timeline": "January 2026 - Present (Live)",
+    "engine": "Roblox Studio, Luau (Rojo, Knit, Roact, Rodux)",
+    "additionalDetails": [
+      {
+        "title": "Procedural Door Unlock & Panel Placement",
+        "description": "Sealed rooms and the vault are opened by hacking control panels that are scattered across the map at mission start rather than placed by hand. Each run spawns five panels across authored spawn points, with the vault door requiring two of them, so no two sessions play the same way. The hard part was the placement rules: a panel must never be locked inside the very room that the same panel unlocks, only a limited number of panels may sit inside locked rooms at all, and each locked room can hold at most one. Spawn points carry metadata for which room they belong to, whether that room is locked, and how near or far they sit from a given door, and the spawner treats distance as a preference but the solvability rules as hard constraints. The result is a layout that is randomized every run but can never soft-lock the team.",
+        "referenceSnipet": ""
+      },
+      {
+        "title": "Grab & Carry Under Network Latency",
+        "description": "Grabbing, carrying and dropping physical objects is the moment-to-moment verb of the whole game, so it had to feel instant while still being validated by the server. The system runs the grab locally on the client for immediate feedback, shows a ghost preview of where the object will land, and reconciles with a server-side grab service that owns the authoritative state. Getting this right meant solving a long list of physical edge cases: grab point offsets on irregular meshes, bodies resting vertically against walls, objects re-entering the grab state mid-grind, releases into disposal zones, and hidden geometry that could be triggered through a wall. Carry capacity itself later became a monetization surface, with a purchasable stack limit and auto-consumed boosters layered on top of the same system.",
+        "referenceSnipet": ""
+      },
+      {
+        "title": "Live-Service Economy & Purchase Reliability",
+        "description": "The game earns through gamepasses, developer products, limited-time starter and VIP offers, and packs, all of which have to survive players disconnecting mid-transaction. Purchase awarding was centralized behind a shared product registry and price fetcher so that every surface shows the same prices and grants through the same path, and a dedicated recovery service re-checks and re-grants any product a player paid for but never received. Timed offers and daily reward streaks are anchored to server time in GMT+0 rather than the client clock, so expiry and streaks cannot be farmed by changing device time, with offline reward grants reconciled on the next login.",
+        "referenceSnipet": ""
+      }
+    ],
+    "projectLink": "https://www.roblox.com/games/126295191500786/Clean-a-Crime"
+  },
+  {
     "projectId": 6,
     "projectName": "Blocktiles",
     "projectDetail": "\"Block Tiles Earn Cyrpto\" is a blockchain-integrated game inspired by classic block-stacking gameplay. Players are rewarded with virtual currency based on the number of lines they clear during gameplay. Once users accumulate enough currency, they can request real-world payouts directly to their Binance or Coinbase account. This system incentivizes skillful play while integrating a real-money reward mechanism."

@@ -62,7 +62,7 @@ function TopBar() {
               <li className="nav-item">
                 <div className="resume">
                   <a
-                    href="QuaziTorikulAlam_GameProgrammer_Resume.pdf"
+                    href={`${import.meta.env.BASE_URL}QuaziTorikulAlam_GameProgrammer_Resume.pdf`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="desc"
