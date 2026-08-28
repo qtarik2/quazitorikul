@@ -6,6 +6,7 @@ import {
 } from "react-router-dom";
 import { AboutInformation, AboutMe } from "./components/About/AboutInformation";
 import Education from "./components/Education/Education";
+import Experience from "./components/Experience/Experience";
 import Projects from "./components/Project/Projects";
 import TechnicalExperience from "./components/Technical Experience/TechnicalExperience";
 import TopBar from "./components/Topbar";
@@ -18,6 +19,8 @@ function App() {
     "C#",
     "Unreal Engine",
     "C++",
+    "Roblox",
+    "Luau",
     "NodeJS",
     "JavaScript",
     "MySQL",
@@ -49,6 +52,7 @@ const MainContent = ({ skillList }: { skillList: string[] }) => (
   <>
     <AboutInformation />
     <Projects />
+    <Experience />
     <Education />
     <TechnicalExperience skills={skillList} />
   </>

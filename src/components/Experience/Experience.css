@@ -1,0 +1,81 @@
+.experiences {
+  margin-bottom: 40px;
+}
+
+.experiences > h1 {
+  margin-bottom: 20px;
+  font-weight: 600;
+  color: #8bc5bf;
+  text-align: left;
+}
+
+.experiences .col-md-6 {
+  padding: 0;
+  margin: 0;
+}
+
+.experiences .col-md-6 .box {
+  background-color: #232323;
+  padding: 40px 50px 30px 50px;
+  border-radius: 4px;
+  height: 100%;
+}
+
+.experiences .box > .experience-head > h4 {
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.experiences .box .current-tag {
+  color: #e29ba7;
+  border: 1px solid #e29ba7;
+  border-radius: 5px;
+  padding: 2px 12px;
+  font-size: 11pt;
+  font-weight: bold;
+}
+
+.experiences .box .company {
+  color: #8bc5bf;
+  margin-bottom: 0;
+}
+
+.experiences .box .company > a {
+  color: #8bc5bf;
+  text-decoration: none;
+}
+
+.experiences .box .company > a:hover {
+  color: #ffffff;
+}
+
+.experiences .box .period {
+  color: #e29ba7;
+  font-size: 12pt;
+  margin-bottom: 15px;
+}
+
+.experiences .box ul {
+  padding-left: 20px;
+  margin: 0;
+}
+
+.experiences .box li {
+  color: #bebebe;
+  font-size: 16pt;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .experiences .col-md-6 .box {
+    padding: 20px 20px 10px 20px;
+    border-radius: 4px;
+  }
+
+  .experiences .box li {
+    font-size: 14pt;
+  }
+}

@@ -31,9 +31,10 @@ export function AboutInformation() {
           />
         </div>
         <div className="col-md-9 summary p-2">
-          Experienced Game Programmer with expertise in Unity 3D, API
-          integration, and backend development. I enjoy writing efficient,
-          well-organized code and am always eager to take on new challenges.
+          Experienced Game Programmer with expertise in Unity 3D, Roblox and
+          Luau, API integration, and backend development. I enjoy writing
+          efficient, well-organized code and am always eager to take on new
+          challenges.
         </div>
       </div>
     </div>
@@ -52,7 +53,8 @@ export function AboutMe() {
           <a href="https://auleek.com/" target="_blank" rel="noopener noreferrer">
             Auleek
           </a>{" "}
-          since January 2026. Previously, I worked as a freelance game
+          since January 2026, where I build multiplayer Roblox titles.
+          Previously, I worked as a freelance game
           programmer and remotely as a Game Developer for GameSoc Studios,
           Cyprus.
         </p>
