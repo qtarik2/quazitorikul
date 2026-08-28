@@ -46,13 +46,16 @@ const Button = ({
       {React.Children.map(children, (child) => {
         if (child && typeof child === "object" && "props" in child) {
           // Ensure we're passing isHovered to FontAwesomeIcon, if present
-          const childArray = child.props.children;
+          const childArray = (child as ReactElement<{ children?: ReactNode }>).props
+            .children;
 
           if (childArray && Array.isArray(childArray)) {
             return React.Children.map(childArray, (c) => {
               if (c && c.type && c.type.name === "GetFontAwesomeIcon") {
                 
-                return React.cloneElement(c as ReactElement, { isHovered });
+                return React.cloneElement(c as ReactElement<{ isHovered?: boolean }>, {
+                  isHovered,
+                });
               }
               return c;
             });

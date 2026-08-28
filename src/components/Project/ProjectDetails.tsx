@@ -69,7 +69,7 @@ function ProjectDetails() {
                     }}
                   >
                     <source
-                      src={"../" + project.footageData.src}
+                      src={import.meta.env.BASE_URL + project.footageData.src}
                       type="video/mp4"
                     />
                     Sorry, your browser doesn't support embedded videos.
@@ -133,21 +133,23 @@ function ProjectDetails() {
                 />{" "}
                 Engine: {project?.engine}
               </p>
-              <p>
-                <GetFontAwesomeIcon
-                  icon={faLink}
-                  size="sm"
-                  styleSheet={{ color: "white" }}
-                />{" "}
-                Link to the App:{" "}
-                <a
-                  href={project?.projectLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Click me
-                </a>
-              </p>
+              {project?.projectLink && (
+                <p>
+                  <GetFontAwesomeIcon
+                    icon={faLink}
+                    size="sm"
+                    styleSheet={{ color: "white" }}
+                  />{" "}
+                  Link to the App:{" "}
+                  <a
+                    href={project.projectLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Click me
+                  </a>
+                </p>
+              )}
             </div>
           </div>
         </div>
