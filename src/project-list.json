@@ -1,7 +1,7 @@
 [
   {
     "projectId": 8,
-    "projectName": "Unannounced Multiplayer Title",
+    "projectName": "Unannounced Title",
     "projectDetail": "An unreleased multiplayer title currently in development. The game has not been announced, so its setting, mechanics and release plans are held back here. What can be said is where my work on it sits: the runtime architecture the gameplay work is built on, the simulation that drives non-player characters and their navigation, and the internal tooling the team tests against. It is built with Rojo and Luau on a Knit service and controller architecture with a Roact and Rodux UI layer.\n\nHappy to talk through the engineering side of this one in more detail in person, within what I am able to share.",
     "footageData": {
       "src": "placeholder.mp4",
@@ -10,7 +10,7 @@
     },
     "members": 4,
     "myContribution": "1. Established the project's technical foundation: structured the codebase into per-system modules and wrote the internal technical documentation the team develops against.\\n2. Designed and built the character simulation framework: a single agent runtime driven by swappable, self-registering behaviour modules, with character types defined as shared read-only configuration rather than branching code.\\n3. Built the perception layer that decides what each agent can see and respond to, including true line-of-sight checks and shared target selection.\\n4. Replaced the engine's built-in pathfinding with a custom navigation stack: a walkability grid rasterised from raycasts, a synchronous A* search with corner-cut prevention and path smoothing, and a crowd avoidance layer.\\n5. Built the agent spawning pipeline, including placement rules, model-driven rigs, animation and whole-map population passes.\\n6. Adapted several systems I had already hardened on a shipped title so the project had a working, testable shell early in pre-production.\\n7. Built the internal developer tooling the rest of the team tests against: a spawn harness, navigation and sensor debug overlays, and runtime state readouts.",
-    "role": "Game Developer",
+    "role": "Roblox Developer",
     "timeline": "July 2026 - Present (In Development)",
     "engine": "Roblox Studio, Luau (Rojo, Knit, Roact, Rodux)",
     "additionalDetails": [
@@ -33,7 +33,7 @@
     },
     "members": 5,
     "myContribution": "1. Built the core grab, carry and drop system including client-authoritative grabbing for responsiveness, ghost placement preview, wall awareness, drop validation, carry stack limits and full PC, mobile and gamepad support.\\n2. Built the grinder and disposal loop that converts collected evidence into payout, along with its zone, effects and visual handling.\\n3. Designed and implemented the door unlock system: procedurally spawned hacking panels, multi-panel vault doors, and placement rules that keep every run solvable.\\n4. Implemented the hostage capture objective end to end, from spawner and rope-constrained dragging to animations and delivery zones.\\n5. Implemented the rearrange-object objective and the generator objective, including their spawners, task templates and client controllers.\\n6. Owned the mission flow: refactored the mission service, extracted its logic layers, added the exit handler and built the animated mission summary screen.\\n7. Owned the lobby: host panel, map and difficulty selection with level gating, map unlocks, teleport flow, the party system through two revisions and party reward boosts.\\n8. Built the equipment system with its shop, tier previews, equip flow and upgrade progression, plus the stat upgrade panels.\\n9. Built the monetization layer: gamepasses, developer products, pack purchases, limited-time starter and VIP offers, the premium shop, and a centralized product registry so every storefront grants through one audited path.\\n10. Built the retention systems: seven-day daily rewards with offline grants, the daily task system, free chests, the spin wheel, social media rewards and the referral system.\\n11. Built live event content and systems including the Clown event and the seasonal event maps and event-only objectives.\\n12. Wrote an object-oriented input system with rebindable actions and console support, and a shared UI toolkit (toasts, global alerts, panel stack, responsive scaling) used across the Roact and Rodux front end.\\n13. Instrumented the game with custom analytics and funnel events for lobby, tutorial, map selection and interaction failures.",
-    "role": "Game Developer",
+    "role": "Roblox Developer",
     "timeline": "January 2026 - Present (Live)",
     "engine": "Roblox Studio, Luau (Rojo, Knit, Roact, Rodux)",
     "additionalDetails": [
