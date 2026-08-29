@@ -1,1 +1,0 @@
-import{t as e}from"./index-C6y21zY8.js";var t=e(((e,t)=>{t.exports=n,n.displayName=`csv`,n.aliases=[];function n(e){e.languages.csv={value:/[^\r\n,"]+|"(?:[^"]|"")*"(?!")/,punctuation:/,/}}}));export default t();
