@@ -40,7 +40,7 @@ const experienceList: Experience[] = [
     company: "Freelance",
     location: "Remote",
     role: "Game Programmer",
-    period: "December 2021 - December 2025",
+    period: "December 2021 - May 2023, April 2024 - December 2025",
     points: [
       "Over 15 successfully completed projects with consistently positive client feedback.",
       "Delivered work across Unity 3D, backend and API integration for clients on Android, iOS and WebGL.",
