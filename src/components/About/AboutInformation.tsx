@@ -31,10 +31,9 @@ export function AboutInformation() {
           />
         </div>
         <div className="col-md-9 summary p-2">
-          Experienced Game Programmer with expertise in Unity 3D, Roblox and
-          Luau, API integration, and backend development. I enjoy writing
-          efficient, well-organized code and am always eager to take on new
-          challenges.
+          Game programmer with five years across Unity 3D and Roblox, plus
+          backend and API integration. I build gameplay systems and the
+          live-service side around them: progression, economy and monetization.
         </div>
       </div>
     </div>

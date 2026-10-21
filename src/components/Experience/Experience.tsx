@@ -30,9 +30,9 @@ const experienceList: Experience[] = [
     role: "Unity Game Developer",
     period: "June 2023 - March 2024",
     points: [
-      "Developed custom solutions to enable additional vendor support, facilitating the distribution of earned virtual currency to thousands of users across multiple games.",
+      "Built the virtual-currency payout path for thousands of users, then added Binance withdrawals for the players who had no access to Coinbase. 70% moved to the new method.",
       "Integrated PlayFab for account management, economy and player data, alongside authentication and ad-based monetization.",
-      "Contributed to increased user engagement and growth for multiple live titles.",
+      "Hardened the economy against exploits and handled live player support for login and account issues.",
     ],
   },
   {
