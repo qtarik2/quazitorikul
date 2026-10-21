@@ -1,5 +1,38 @@
 [
   {
+    "projectId": 9,
+    "projectName": "Highway Wrecker",
+    "projectDetail": "A mobile arcade game where you drive an armored wrecker down a highway and smash whatever is in front of you. Wrecks pay cash, cash buys upgrades, and a stronger truck gets further down the road before it dies. One thumb, short runs, built portrait for phones.\n\nTraffic is not scenery. Every vehicle has a weight class, so a bike folds on contact while an armored van shrugs off a bad hit, and a car you launch can shunt the next one into a chain. The drivers react as well. Some spin out, some turn on you, some try to get away.",
+    "footageData": {
+      "src": "placeholder.mp4",
+      "type": "video",
+      "fit": "contain"
+    },
+    "members": 3,
+    "myContribution": "1. Built the truck handling: steering that turns nose-first with weight behind it, body roll off sideways acceleration, wheel motion, and the bob and pitch that sell the suspension.\\n2. Built the wrecking model. Every vehicle carries a weight class and its own HP, hits are aimed like a paddle, and a launched wreck can shunt the next vehicle along.\\n3. Wrote the chain rules so longer and more varied chains pay bonus cash, with weight respected: a light wreck chips a heavy vehicle instead of deleting it.\\n4. Built reactive traffic. Rams spin cars out, some drivers turn aggressive, some flee, and the mix changes section by section down the road.\\n5. Built the Garage: Engine, Ram and Body at five tiers each, driven from the per-vehicle level tables in the design doc.\\n6. Built the World Tour map select with per-map unlocks, and the map data that drives each run's zones, traffic, roadside and gates.\\n7. Moved the chase camera onto Cinemachine and gave it lean through turns to match the prototype framing.\\n8. Built the UI in UI Toolkit: HUD, speedometer, pause and results screens, map cards, and the run intro with its countdown and engine hold.\\n9. Set up Addressables so each map's art loads on demand instead of shipping every environment in the build.\\n10. Wired the plumbing underneath: save data, object pooling, scene loading, input actions with gamepad and keyboard alongside drag steering, and Android haptics.",
+    "role": "Unity Developer",
+    "timeline": "October 2026 - Present (In Development)",
+    "engine": "Unity 6.3 URP, C# (iOS, Android)",
+    "additionalDetails": [
+      {
+        "title": "Weight Classes, and What Actually Breaks",
+        "description": "The first pass wrecked every vehicle in one hit, which made the whole road feel like paper and left nothing to upgrade toward. Weight class now decides. Light traffic always goes down in one. Everything heavier loses HP per hit, side hits wear it down, and armored vehicles carry a shield on top. The rule that pulled it together is that a lighter wreck can only chip a heavier vehicle, never delete it, which is what makes a Ram upgrade something you feel rather than read. Bikes needed their own Super Light class once the rest settled.",
+        "referenceSnipet": ""
+      },
+      {
+        "title": "Chains",
+        "description": "Hits are aimed rather than absorbed. Where you catch a vehicle decides which way it launches, closer to a paddle than a bumper, and a launched wreck can take the next vehicle with it. Longer and more varied chains pay bonus cash, so the skill ceiling is lining up a hit that clears three cars instead of one. The weight rules keep it honest, otherwise one lucky bike would clear a lane of trucks.",
+        "referenceSnipet": ""
+      },
+      {
+        "title": "Maps Loaded On Demand",
+        "description": "World Tour splits each map into sections, and a section owns its zones, traffic mix, roadside dressing and gates, so the same drive changes character as you move through it. Art is the expensive part on mobile, so each map's environment loads through Addressables rather than sitting in the build. The first content build is done and the maps drive the game scene from their own data, which means a new location is a data and art job rather than a code one.",
+        "referenceSnipet": ""
+      }
+    ],
+    "projectLink": ""
+  },
+  {
     "projectId": 8,
     "projectName": "Robbery Simulator",
     "projectDetail": "A Roblox heist game. Your crew robs a shop, takes whatever is worth money and gets out before the police arrive. Cash rides in a bag on your back and only counts once it reaches the escape van.\n\nHeat is the clock. It climbs on its own and spikes when someone spots you, calls it in, or you start shooting. When the timer runs out the police show up, and how many of them depends on how much Heat you made. Everyone in the building is a live NPC, so a quiet job and a loud one play nothing alike.",

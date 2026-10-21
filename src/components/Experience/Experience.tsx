@@ -22,6 +22,7 @@ const experienceList: Experience[] = [
       "Build gameplay and backend systems for shipped multiplayer Roblox titles on a Rojo, Knit, Roact and Rodux stack.",
       "Own systems end to end on live titles, from core interaction mechanics and mission objectives to lobby flow, progression, monetization and seasonal live events.",
       "On Robbery Simulator, designed the NPC and police AI, the Heat escalation system, and a custom navigation stack replacing the engine pathfinder.",
+      "Now building Highway Wrecker, a Unity 6 mobile arcade title for release under Auleek.",
     ],
   },
   {
