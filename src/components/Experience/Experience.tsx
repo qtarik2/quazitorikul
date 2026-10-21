@@ -19,9 +19,9 @@ const experienceList: Experience[] = [
     current: true,
     companyLink: "https://auleek.com/",
     points: [
-      "Build gameplay and backend systems for multiplayer Roblox titles on a Rojo, Knit, Roact and Rodux stack.",
-      "Own systems end to end on a live title, from core interaction mechanics and mission objectives to lobby flow, progression, monetization and seasonal live events.",
-      "Design the character simulation and a custom navigation stack for an unannounced project, alongside the internal tooling the team tests against.",
+      "Build gameplay and backend systems for shipped multiplayer Roblox titles on a Rojo, Knit, Roact and Rodux stack.",
+      "Own systems end to end on live titles, from core interaction mechanics and mission objectives to lobby flow, progression, monetization and seasonal live events.",
+      "On Robbery Simulator, designed the NPC and police AI, the Heat escalation system, and a custom navigation stack replacing the engine pathfinder.",
     ],
   },
   {
