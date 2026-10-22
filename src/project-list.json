@@ -70,7 +70,7 @@
     "projectName": "Clean-a-Crime",
     "projectDetail": "A Roblox game about cleaning up after the heist instead of pulling it off. Your crew lands in a crime scene on a timer: scrub the blood, grind up the evidence and the bodies, put moved furniture back where it was, hack the panels that open locked rooms and the vault, and drag the hostages out.\n\nOn top of that sits a full live-service loop. Levels unlock maps and difficulties, cash and XP feed equipment and stat upgrades, and seasonal events such as Clown, Ghost and Glitch bring their own maps and objectives.",
     "footageData": {
-      "src": "placeholder.mp4",
+      "src": "CleanACrime.mp4",
       "type": "video",
       "fit": "contain"
     },
