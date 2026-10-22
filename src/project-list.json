@@ -4,7 +4,7 @@
     "projectName": "Highway Wrecker",
     "projectDetail": "A mobile arcade game where you drive an armored wrecker down a highway and smash whatever is in front of you. Wrecks pay cash, cash buys upgrades, and a stronger truck gets further down the road before it dies. One thumb, short runs, built portrait for phones.\n\nTraffic is not scenery. Every vehicle has a weight class, so a bike folds on contact while an armored van shrugs off a bad hit, and a car you launch can shunt the next one into a chain. The drivers react as well. Some spin out, some turn on you, some try to get away.",
     "footageData": {
-      "src": "placeholder.mp4",
+      "src": "highwaywrecker.mp4",
       "type": "video",
       "fit": "contain"
     },
