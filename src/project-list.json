@@ -37,7 +37,7 @@
     "projectName": "Robbery Simulator",
     "projectDetail": "A Roblox heist game. Your crew robs a shop, takes whatever is worth money and gets out before the police arrive. Cash rides in a bag on your back and only counts once it reaches the escape van.\n\nHeat is the clock. It climbs on its own and spikes when someone spots you, calls it in, or you start shooting. When the timer runs out the police show up, and how many of them depends on how much Heat you made. Everyone in the building is a live NPC, so a quiet job and a loud one play nothing alike.",
     "footageData": {
-      "src": "placeholder.mp4",
+      "src": "robberysimulator.mp4",
       "type": "video",
       "fit": "contain"
     },
